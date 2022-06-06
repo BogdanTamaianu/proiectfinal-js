@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Tracker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- in aplicatiile moderne, site-urile nu mai sunt statice (mai multe HTML-uri)
+	pentru a face un SPA(single page application), pastram in HTML un singur element(root)
+	si incarcam HTML-ul dinamic, in mai multe fisiere .js -->
+	<div id="root"></div>
+	<ul class="movies-list"></ul>
+	<!-- fisierele .js se incarca in ordine!  -->
+	<!-- uitati-va mai intai in index.js. daca se apeleaza vreo functie,
+	uitati-va in fisierul .js care contine functia respectiva -->
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="header.js"></script>
+	<script type="text/javascript" src="addMovie.js"></script>
+	<script type="text/javascript" src="movie.js"></script>
+	<script type="text/javascript" src="movieList.js"></script>
+	<script type="text/javascript" src="sort.js"></script>
+	<script type="text/javascript" src="listtotable.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+	<script type="text/javascript" src="acttime.js"></script>
+	<script type="text/javascript" src="fetch.js"></script>
+</body>
+</html>
